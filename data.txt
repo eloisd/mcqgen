@@ -1,0 +1,40 @@
+Generative AI model architectures and how they have evolved
+Truly generative AI models—deep learning models that can autonomously create content on demand—have evolved over the last dozen years or so. The milestone model architectures during that period include
+
+Variational autoencoders (VAEs), which drove breakthroughs in image recognition, natural language processing and anomaly detection.
+ 
+
+Generative adversarial networks (GANs) and diffusion models, which improved the accuracy of previous applications and enabled some of the first AI solutions for photo-realistic image generation.
+ 
+
+Transformers, the deep learning model architecture behind the foremost foundation models and generative AI solutions today.
+
+Variational autoencoders (VAEs)
+An autoencoder is a deep learning model comprising two connected neural networks: One that encodes (or compresses) a huge amount of unstructured, unlabeled training data into parameters, and another that decodes those parameters to reconstruct the content. Technically, autoencoders can generate new content, but they’re more useful for compressing data for storage or transfer, and decompressing it for use, than they are for high-quality content generation.
+
+Introduced in 2013, variational autoencoders (VAEs) can encode data like an autoencoder, but decode multiple new variations of the content. By training a VAE to generate variations toward a particular goal, it can ‘zero in’ on more accurate, higher-fidelity content over time. Early VAE applications included anomaly detection (e.g., medical image analysis) and natural language generation.
+
+Generative adversarial networks (GANs)
+GANs, introduced in 2014, also comprise two neural networks: A generator, which generates new content, and a discriminator, which evaluates the accuracy and quality the generated data. These adversarial algorithms encourages the model to generate increasingly high-quality outpits.
+
+GANs are commonly used for image and video generation, but can generate high-quality, realistic content across various domains. They've proven particularly successful at tasks as style transfer (altering the style of an image from, say, a photo to a pencil sketch) and data augmentation (creating new, synthetic data to increase the size and diversity of a training data set).
+
+Diffusion models
+Also introduced in 2014, diffusion models work by first adding noise to the training data until it’s random and unrecognizable, and then training the algorithm to iteratively diffuse the noise to reveal a desired output.
+
+Diffusion models take more time to train than VAEs or GANs, but ultimately offer finer-grained control over output, particularly for high-quality image generation tool. DALL-E, Open AI’s image-generation tool, is driven by a diffusion model.
+
+Transformers
+First documented in a 2017 paper published by Ashish Vaswani and others, transformers evolve the encoder-decoder paradigm to enable a big step forward in the way foundation models are trained, and in the quality and range of content they can produce. These models are at the core of most of today’s headline-making generative AI tools, including ChatGPT and GPT-4, Copilot, BERT, Bard, and Midjourney to name a few.
+
+Transformers use a concept called attention—determining and focusing on what’s most important about data within a sequence—to
+
+process entire sequences of data—e.g., sentences instead of individual words—simultaneously;
+ 
+
+capture the context of the data within the sequence;
+ 
+
+encode the training data into embeddings (also called hyperparameters) that represent the data and its context.
+
+In addition to enabling faster training, transformers excel at natural language processing (NLP) and natural language understanding (NLU), and can generate longer sequences of data—e.g., not just answers to questions, but poems, articles or papers—with greater accuracy and higher quality than other deep generative AI models. Transformer models can also be trained or tuned to use tools—e.g., a spreadsheet application, HTML, a drawing program—to output content in a particular format.
