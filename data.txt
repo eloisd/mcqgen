@@ -1,40 +1,178 @@
-Generative AI model architectures and how they have evolved
-Truly generative AI models—deep learning models that can autonomously create content on demand—have evolved over the last dozen years or so. The milestone model architectures during that period include
-
-Variational autoencoders (VAEs), which drove breakthroughs in image recognition, natural language processing and anomaly detection.
- 
-
-Generative adversarial networks (GANs) and diffusion models, which improved the accuracy of previous applications and enabled some of the first AI solutions for photo-realistic image generation.
- 
-
-Transformers, the deep learning model architecture behind the foremost foundation models and generative AI solutions today.
-
-Variational autoencoders (VAEs)
-An autoencoder is a deep learning model comprising two connected neural networks: One that encodes (or compresses) a huge amount of unstructured, unlabeled training data into parameters, and another that decodes those parameters to reconstruct the content. Technically, autoencoders can generate new content, but they’re more useful for compressing data for storage or transfer, and decompressing it for use, than they are for high-quality content generation.
-
-Introduced in 2013, variational autoencoders (VAEs) can encode data like an autoencoder, but decode multiple new variations of the content. By training a VAE to generate variations toward a particular goal, it can ‘zero in’ on more accurate, higher-fidelity content over time. Early VAE applications included anomaly detection (e.g., medical image analysis) and natural language generation.
-
-Generative adversarial networks (GANs)
-GANs, introduced in 2014, also comprise two neural networks: A generator, which generates new content, and a discriminator, which evaluates the accuracy and quality the generated data. These adversarial algorithms encourages the model to generate increasingly high-quality outpits.
-
-GANs are commonly used for image and video generation, but can generate high-quality, realistic content across various domains. They've proven particularly successful at tasks as style transfer (altering the style of an image from, say, a photo to a pencil sketch) and data augmentation (creating new, synthetic data to increase the size and diversity of a training data set).
-
-Diffusion models
-Also introduced in 2014, diffusion models work by first adding noise to the training data until it’s random and unrecognizable, and then training the algorithm to iteratively diffuse the noise to reveal a desired output.
-
-Diffusion models take more time to train than VAEs or GANs, but ultimately offer finer-grained control over output, particularly for high-quality image generation tool. DALL-E, Open AI’s image-generation tool, is driven by a diffusion model.
-
-Transformers
-First documented in a 2017 paper published by Ashish Vaswani and others, transformers evolve the encoder-decoder paradigm to enable a big step forward in the way foundation models are trained, and in the quality and range of content they can produce. These models are at the core of most of today’s headline-making generative AI tools, including ChatGPT and GPT-4, Copilot, BERT, Bard, and Midjourney to name a few.
-
-Transformers use a concept called attention—determining and focusing on what’s most important about data within a sequence—to
-
-process entire sequences of data—e.g., sentences instead of individual words—simultaneously;
- 
-
-capture the context of the data within the sequence;
- 
-
-encode the training data into embeddings (also called hyperparameters) that represent the data and its context.
-
-In addition to enabling faster training, transformers excel at natural language processing (NLP) and natural language understanding (NLU), and can generate longer sequences of data—e.g., not just answers to questions, but poems, articles or papers—with greater accuracy and higher quality than other deep generative AI models. Transformer models can also be trained or tuned to use tools—e.g., a spreadsheet application, HTML, a drawing program—to output content in a particular format.
+CHAPITRE 3 – La Seconde Guerre mondiale (1939-1945)
+COURS 1. Les phases et les théâtres d’opérations d’une guerre 
+mondiale (1939-1945) (p. 90-91)
+Quelles sont les principales étapes d’une guerre qui s’étend rapidement à 
+l’ensemble du monde ?
+A - 1939-1941 : les victoires de l’Axe
+1. Les offensives en Europe (1939-1941)
+La guerre débute en Europe avec l’invasion de la Pologne. Forte de la nonintervention soviétique (pacte germano-soviétique → chapitre 2), l’Allemagne adopte 
+la stratégie militaire de la Blitzkrieg (« guerre-éclair »), ce qui lui permet de remporter 
+des victoires foudroyantes. La défaite et le démembrement de la Pologne (automne 
+1939) sont suivis au printemps 1940 de l’occupation du Nord-Ouest européen, 
+depuis le Danemark jusqu’à la France.
+Seul contre l’Axe, le Royaume-Uni subit des bombardements intensifs. Galvanisé par 
+Churchill, le pays tient bon. Londres devient le refuge des gouvernements européens 
+en exil, comme celui de la France libre du général de Gaulle.
+Le conflit s’étend en Méditerranée où les puissances de l’Axe veulent couper l’accès 
+du Royaume-Uni aux puits pétroliers et à la route de Suez afin de l’isoler de son 
+Empire indien. Au printemps 1941, les troupes allemandes repoussent les troupes 
+britanniques vers l’Égypte. Les Allemands s’emparent aussi de la Yougoslavie et de 
+la Grèce.
+© Nathan 2020. Histoire Term collection S. Cote
+2. L’expansion du Japon en Asie
+Allié de l’Allemagne en Asie, le Japon y mène une politique autonome de conquête. 
+À l’expansion continentale (conquête de la Mandchourie dès 1931, guerre contre la 
+Chine déclenchée en 1937) succède une expansion maritime en direction du sud qui 
+vise la constitution d’un vaste empire dans le Pacifique.
+Cette politique, qui bénéficie de la collaboration militaire de la France du maréchal 
+Pétain (utilisation des bases aériennes françaises en Indochine), inquiète autant le 
+Royaume-Uni – dont les possessions sont menacées – que les États-Unis.
+B - 1941 : une guerre pleinement mondiale
+1. L’invasion de l’URSS
+Le 22 juin 1941, en rupture avec le pacte germano-soviétique, Hitler lance l’offensive 
+contre l’URSS. L’opération Barbarossa mobilise des moyens matériels et humains 
+énormes, à la hauteur de la promesse qu’elle représente : vaincre le berceau du 
+communisme, acquérir un espace vital (Lebensraum → chapitre 2) pour le peuple 
+allemand, éradiquer le « judéo-bolchevisme », les Juifs étant assimilés au 
+communisme.
+De ce fait, le front de l’Est est le théâtre d’une guerre d’anéantissement de 
+l’adversaire slave, de l’ennemi communiste, et plus encore des Juifs, tous victimes 
+de crimes de masse (→ cours p. 96-97).
+D’abord extrêmement rapide, la progression de la Wehrmacht marque un premier 
+coup d’arrêt avec l’échec devant Moscou à l’hiver 1941. La détermination des 
+© Nathan 2020. Histoire Term collection S. Cote
+Soviétiques mobilisés dans « la Grande Guerre patriotique » accentue le caractère 
+extrêmement meurtrier du conflit et le transforme en guerre d’usure.
+2. L’entrée en guerre des États-Unis
+En attaquant la base américaine de Pearl Harbor (îles Hawaii) le 7 décembre 1941, 
+le Japon provoque l’entrée en guerre des États-Unis. Dès le lendemain, le président 
+Roosevelt déclare les États-Unis en état de guerre avec le Japon ; conformément au 
+pacte tripartite, l’Italie et l’Allemagne déclarent la guerre aux États-Unis. Déjà effectif 
+depuis le printemps 1941 (loi prêt-bail, mars 1941), le soutien des États-Unis aux 
+démocraties se transforme alors en une mobilisation totale de la puissance 
+américaine.
+Le 1er janvier 1942, 26 États, dont les États-Unis, le Royaume-Uni et l’URSS, signent 
+à Washington une déclaration des Nations unies, par laquelle ils s’engagent à 
+mobiliser toutes leurs ressources dans la guerre contre l’ennemi commun.
+C - 1942-1945 : vers la victoire des Alliés
+1. 1942-1943 : premiers basculements des conflits
+Dans le Pacifique, la victoire aéronavale américaine à Midway (4 au 7 juin 1942), qui 
+interdit la mainmise du Japon sur cette base américaine, stoppe l’expansion 
+japonaise : elle est le point de départ de la reconquête du Pacifique par les ÉtatsUnis.
+En Afrique du Nord, la victoire britannique d’El-Alamein puis le débarquement angloaméricain (opération Torch, 8 novembre 1942), auxquels participent les FFL, 
+© Nathan 2020. Histoire Term collection S. Cote
+ébranlent les positions de l’Axe : l’armée allemande est contrainte au repli, les Alliés 
+s’installent sur la côte algérienne, point de départ d’opérations futures en Europe.
+Sur le front de l’Est, la bataille de Stalingrad, engagée à l’été 1942, se solde par un 
+échec cuisant pour la Wehrmacht : contre les ordres d’Hitler, les troupes allemandes 
+capitulent en février 1943.
+2. 1944-1945 : la reddition des forces de l’Axe
+Fin 1943 à Téhéran, Roosevelt, Staline et Churchill posent la nécessité d’une 
+coordination des opérations. Au débarquement militaire allié à l’Ouest répondra une 
+offensive terrestre à l’Est. L’articulation entre les opérations Overlord et Bagration est 
+la clé du succès.
+Déclenchées toutes deux en juin 1944, ces opérations permettent de prendre 
+l’Allemagne en étau. En avril 1945, Soviétiques et Américains font leur jonction à 
+Torgau sur l’Elbe (→ p. 118), prélude à la prise de Berlin par les Soviétiques, puis à 
+la capitulation allemande.
+Dans le Pacifique, la reconquête des territoires soumis par le Japon s’effectue d’île 
+en île, chaque avancée renforçant la résistance des Japonais, soldats (kamikazes) 
+comme civils (suicides collectifs). Seuls détenteurs de l’arme atomique, les ÉtatsUnis font le choix de l’utiliser, à Hiroshima d’abord, à Nagasaki ensuite, conduisant le 
+Japon à une reddition (2 septembre 1945) qui marque la fin du conflit.
+© Nathan 2020. Histoire Term collection S. Cote
+PASSÉ/PRÉSENT – POINT DE PASSAGE. Hiroshima, Nagasaki :
+l’utilisation de l’arme nucléaire, une question toujours actuelle ?
+(p. 94-95)
+Doc 3 p. 94 : Le président des États-Unis s’exprime sur le choix de la 
+bombe atomique
+Le monde entier remarquera que la première bombe atomique a été lâchée sur 
+Hiroshima, une base militaire […]. Nous savions que nos ennemis faisaient des 
+recherches. Nous savons maintenant que leurs recherches étaient sur le point 
+d’aboutir. Nous savions quelle serait l’ampleur du désastre dans notre pays, dans 
+tous les pays pacifiques, pour toute la civilisation, s’ils l’avaient découverte en 
+premier. […] Ayant découvert la bombe, nous l’avons utilisée. Nous l’avons utilisée 
+contre ceux qui nous ont attaqués sans prévenir à Pearl Harbor, contre ceux qui ont 
+affamé, battu à mort et exécuté des prisonniers de guerre américains, contre ceux 
+qui ont abandonné tout semblant de respect des lois de guerre internationales. Nous 
+l’avons utilisée pour écourter l’agonie de la guerre, pour sauver les vies de plusieurs 
+milliers de jeunes Américains. Nous continuerons de l’utiliser jusqu’à ce que nous 
+ayons complètement détruit les forces qui permettent au Japon de faire la guerre. 
+Seule une capitulation nous arrêtera.
+Harry S. Truman, discours radiodiffusé, 9 août 1945.
+© Nathan 2020. Histoire Term collection S. Cote
+Doc 5 p. 95 : Le secrétaire général de l’ONU plaide la cause du 
+désarmement
+Alors que nous célébrons le soixante-quatorzième anniversaire de la première 
+utilisation d’une arme nucléaire dans une guerre, il existe près de 14 000 ogives 
+nucléaires, dont beaucoup sont toujours en position d’alerte. Il reste encore 
+beaucoup à faire pour réduire et finalement éliminer ce risque », a déclaré 
+M. Guterres1 dans un message lu par la haute-représentante des Nations unies pour 
+les affaires de désarmement, Izumi Nakamitsu, lors de la cérémonie annuelle 
+organisée à Hiroshima. […]
+Selon le chef de l’ONU, il est plus nécessaire que jamais de rappeler le message 
+fondamental des hibakusha – les survivants des bombardements atomiques 
+d’Hiroshima et de Nagasaki en août 1945 – : « La seule garantie contre l’utilisation 
+des armes nucléaires est l’élimination totale de celles-ci. »
+« Anniversaire du bombardement d’Hiroshima : le chef de l’ONU appelle à 
+l’élimination totale des armes nucléaires », ONU Infos, news.un.org, 
+6 août 2019.
+1. António Guterres, secrétaire général de l’ONU, est représenté à 
+l’occasion de cette cérémonie par Izumi Nakamitsu, secrétaire générale 
+adjointe.
+© Nathan 2020. Histoire Term collection S. Cote
+COURS 2. Violences de masse et génocides des Juifs et des 
+Tsiganes (p. 96-97)
+Quelles sont les différentes formes prises par les violences de masse au cours 
+de la Seconde Guerre mondiale ?
+A - Les génocides des Juifs et des Tsiganes
+1. Exclusion et persécution des Juifs et des Tsiganes jusqu’en 1941
+L’idéologie nazie installe le racisme au cœur du projet politique. L’enjeu est de 
+promouvoir la « race aryenne » et de la protéger de ses « ennemis » : handicapés 
+mentaux, Tsiganes et surtout Juifs, sont considérés comme une menace pour la 
+« pureté » du peuple allemand.
+L’objectif de purification se traduit par la législation antisémite des années 1930 et 
+par la ségrégation dont sont victimes Juifs et Tsiganes au sein du Reich. Ces 
+populations sont peu à peu exclues de la vie politique et sociale, encouragées à 
+émigrer ou enfermées dans des camps comme celui de Marzahn (Allemagne) pour 
+les Tsiganes.
+En Pologne à partir de septembre 1939, le projet racial va se mettre en place dans 
+un nouvel espace que les nazis entendent germaniser, contrôler (élimination des 
+élites intellectuelles), exploiter et « purifier ». Des ghettos sont progressivement 
+installés dans les villes polonaises (Varsovie, Lodz, etc.).
+2. Invasion de l’URSS (juin 1941) et processus génocidaire
+Le front de l’Est se singularise par une violence inédite. En juin 1941, l’assaut lancé 
+contre l’URSS vise à conquérir un « espace vital » (Lebensraum → chapitre 2) pour 
+© Nathan 2020. Histoire Term collection S. Cote
+le peuple allemand. Dans le sillage des troupes d’invasion, les Einsatzgruppen sont
+chargés de l’éradication de tous les ennemis politiques et raciaux.
+Communistes, Tsiganes et surtout Juifs sont les cibles d’exécutions qui se 
+transforment rapidement en massacres de masse incluant femmes et enfants pour 
+exterminer des communautés entières. En septembre 1941, sur 2 jours, la totalité
+des Juifs de Kiev – près de 34 000 individus – sont ainsi exterminés dans le ravin de 
+Babi Yar (Ukraine).
+À ces tueries mobiles, sur le lieu de vie des populations juives, s’ajoutent des 
+assassinats commis sur des sites transformés en lieux de mise à mort. Ainsi de 
+Kaunas (Lituanie), où certains forts servent de lieux d’assassinat.
+3. L’extermination de masse généralisée à toute l’Europe
+À la fin de l’année 1941, 500 000 à 800 000 Juifs ont déjà été assassinés sur le 
+territoire soviétique. Des centres de mise à morts ont alors créés en territoire 
+polonais, sur des sites facilement accessibles et relativement isolés (Chelmno, 
+Belzec, Sobibor, Treblinka). Le gazage – par camion d’abord, en chambre à gaz 
+ensuite – permet une rationalisation de l’assassinat et place le bourreau à distance 
+des victimes. À Chelmno, 5 000 Tsiganes et 150 000 Juifs sont assassinés entre la 
+fin 1941 et mars 1943.
+En janvier 1942, le chef SS de la sécurité du Reich, Reinhard Heydrich, réunit à 
+Wannsee (banlieue de Berlin) des hauts fonctionnaires du Parti nazi et de 
+l’administration allemande pour organiser la « solution finale à la question juive », 
+c’est-à-dire la destruction des Juifs. Le génocide des Juifs (Shoah) adopte une 
+organisation centralisée depuis Berlin. De plus, le périmètre fixé à l’extermination est 
+© Nathan 2020. Histoire Term collection S. Cote
+étendu : tous les Juifs d’Europe sont désormais concernés. À partir de l’été 1942, le 
+camp d’Auschwitz-Birkenau devient le centre de mise à mort des populations juives 
+de l’Europe non allemande. De toute l’Europe, des convois organisent la déportation 
+des Juifs ; pour la France, ce sont quelque 80 « trains de la mort » qui acheminent, 
+entre 1942 et 1944, 76 000 Juifs depuis les camps d’internement et de transit jusqu’à 
+Birkenau.
+À la fin de la guerre, le bilan humain est effroyable : surmortalité des ghettos, 
+massacres, mise à mort programmée. Près de 63 % des Juifs d’Europe (près de 
+6 millions), 34 % des Tsiganes (250 000) ont été exterminés.
