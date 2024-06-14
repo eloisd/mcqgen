@@ -6,7 +6,7 @@ import traceback
 def read_file(file):
     if file.name.endswith(".pdf"):
         try:
-            pdf_reader=PyPDF2.PdfReader(file)
+            pdf_reader=PyPDF2.PdfFileReader(file)
             text=""
             for page in pdf_reader.pages:
                 text+=page.extract_text()
@@ -20,15 +20,13 @@ def read_file(file):
     
     else:
         raise Exception(
-            "unsupported file format, only pdf and text file suppoted"
+            "unsupported file format only pdf and text file suppoted"
             )
 
 def get_table_data(quiz_str):
     try:
         # convert the quiz from a str to dict
-        print('\n'+quiz_str+'\n')
         quiz_dict=json.loads(quiz_str)
-        print('\n',quiz_dict,'\n')
         quiz_table_data=[]
         
         # iterate over the quiz dictionary and extract the required information

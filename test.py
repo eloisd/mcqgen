@@ -1,3 +1,3 @@
 from src.mcqgenerator.logger import logging
 
-logging.info("This is a test log message")
+logging.info("Now I'm using github.dev ")

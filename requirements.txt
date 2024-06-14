@@ -4,5 +4,8 @@ streamlit
 python-dotenv
 PyPDF2
 pandas
+langchain_community
+langchain-openai
+streamlit
 
 -e .
