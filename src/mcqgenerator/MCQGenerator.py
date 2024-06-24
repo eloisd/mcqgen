@@ -12,22 +12,32 @@ from src.mcqgenerator.logger import logging
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
-import langchain_community
+from langchain_community.llms import HuggingFaceHub
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Access environment variables with os.getenv()
-key = os.getenv("OPENAI_API_KEY")
+openai_key = os.getenv("OPENAI_API_KEY")
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("HUGGINGFACE_API_KEY")
 
-llm = ChatOpenAI(openai_api_key=key, model_name="gpt-3.5-turbo", temperature=0.7)
+model1= "gpt-3.5-turbo"
+model2= "gpt-4o"
+model3 = "mistralai/Mistral-7B-Instruct-v0.3"
+model4 = "meta-llama/Meta-Llama-3-8B-Instruct"
+model5 = "meta-llama/Meta-Llama-3-8B"
+
+llm1 = ChatOpenAI(openai_api_key=openai_key, model_name=model1, temperature=0.7)
+llm2 = ChatOpenAI(openai_api_key=openai_key, model_name=model2, temperature=0.7)
+llm3 = HuggingFaceHub(repo_id=model3, model_kwargs={'temperature':1,'max_new_tokens': 1000})
+llm4 = HuggingFaceHub(repo_id=model4, model_kwargs={'temperature':1})
 
 quiz_generator_template = '''
 Text:{text}
 You are an expert MCQ maker. Given the above text, your job is to create a quiz of {number} multiple choice questions for {subject} students in {tone} tone. 
-Make sure the questions are not repeated and check all the questions to be conformed to the text.
-Make sure to format your response like RESPONSE_JSON below and use it as a guide. Ensure to make {number} MCQs.
-### RESPONSE_JSON:
+Make sure the questions are not repeated and check all the questions to be conformed to the text. Ensure to make {number} MCQs.
+Make sure to format your response like RESPONSE_JSON below and use it as a guide. 
+###RESPONSE_JSON:
 {response_json}
 
 '''
@@ -37,7 +47,7 @@ quiz_generator_prompt = PromptTemplate(
     template = quiz_generator_template
 )
 
-quiz_chain = LLMChain(llm=llm, prompt=quiz_generator_prompt, output_key="quiz", verbose=True)
+quiz_chain = LLMChain(llm=llm1, prompt=quiz_generator_prompt, output_key="quiz", verbose=True)
 
 quiz_evaluation_template="""
 You are an expert english grammarian and writer. Given a Multiple Choice Quiz for {subject} students.\
@@ -47,12 +57,12 @@ update the quiz questions which needs to be changed and change the tone such tha
 Quiz_MCQs:
 {quiz}
 
-Check from an expert English Writer of the above quiz:
+Check from an expert French Writer of the above quiz:
 """
 
 quiz_evaluation_prompt = PromptTemplate(input_variables=["subject", "quiz"], template=quiz_evaluation_template)
 
-review_chain=LLMChain(llm=llm, prompt=quiz_evaluation_prompt, output_key="review", verbose=True)
+review_chain=LLMChain(llm=llm1, prompt=quiz_evaluation_prompt, output_key="review", verbose=True)
 
 
 # Overall chain allowing to run the two chains in sequence

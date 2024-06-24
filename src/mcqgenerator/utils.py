@@ -26,9 +26,10 @@ def read_file(file):
 def get_table_data(quiz_str):
     try:
         # convert the quiz from a str to dict
-        print('\n'+quiz_str+'\n')
+        # print('\n'+quiz_str+'\n')
+        # quiz_str = quiz_str.splitlines()
+        # print('\n',quiz_str,'\n')        
         quiz_dict=json.loads(quiz_str)
-        print('\n',quiz_dict,'\n')
         quiz_table_data=[]
         
         # iterate over the quiz dictionary and extract the required information
@@ -38,7 +39,7 @@ def get_table_data(quiz_str):
                 [
                     f"{option}-> {option_value}" for option, option_value in value["options"].items()
                  
-                 ]
+                ]
             )
             
             correct=value["correct"]

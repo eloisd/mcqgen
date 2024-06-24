@@ -6,6 +6,7 @@ PyPDF2
 pandas
 langchain_community
 langchain-openai
-streamlit
+huggingface-hub
+langchain-huggingface`
 
 -e .

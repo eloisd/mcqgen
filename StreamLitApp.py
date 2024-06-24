@@ -10,6 +10,10 @@ from src.mcqgenerator.logger import logging
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 from langchain_community.callbacks.manager import get_openai_callback
 
+string1 = "azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN1234567890!@#$%^&*()_+-=[];':,.<>?/|" + '"' + "éèàùçÉÈÀÙÇâêîôûÂÊÎÔÛäëïöüÄËÏÖÜ" + " \n\t"
+string3 = "###RESPONSE_JSON:"
+string2 = string1 + "{}"
+
 # load json file
 with open("Response.json") as file:
     RESPONSE_JSON = json.load(file)
@@ -63,9 +67,14 @@ with st.form("user_inputs"):
                 print(f"Completion Tokens:{cb.completion_tokens}")
                 print(f"Total Cost:{cb.total_cost}")
                 if isinstance(response, dict):
+                    # print(response)
                     #Extract the quiz data from the response
                     quiz=response.get("quiz", None)
                     if quiz is not None:
+                        print('quiz1',quiz)
+                        quiz = quiz.lstrip(string1).rstrip(string1)
+                        print('quiz2',quiz)
+
                         table_data=get_table_data(quiz)
                         if table_data is not None:
                             df=pd.DataFrame(table_data)
