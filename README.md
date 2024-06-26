@@ -40,3 +40,4 @@
 10. python3 -m streamlit run StreamLitApp.py
 11. Go to "security" > "Edit rules" > "New rule"
 12. Add port 8501
+13. Don't forget to stop or delete the server
