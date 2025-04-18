@@ -1,13 +1,13 @@
-openai
-langchain
-streamlit
-python-dotenv
-PyPDF2
-pandas
-langchain_community
-langchain-openai
-huggingface-hub
-langchain-huggingface
+# openai
+# langchain
+# streamlit
+# python-dotenv
+# PyPDF2
+# pandas
+# langchain_community
+# langchain-openai
+# huggingface-hub
+# langchain-huggingface
 
 -e .
 
