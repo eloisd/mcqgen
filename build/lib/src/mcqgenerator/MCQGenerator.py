@@ -20,7 +20,7 @@ load_dotenv()
 # Access environment variables with os.getenv()
 key = os.getenv("OPENAI_API_KEY")
 
-llm = ChatOpenAI(openai_api_key=key, model_name="gpt-3.5-turbo", temperature=0.7)
+llm = ChatOpenAI(openai_api_key=key, model_name="gpt-4o-mini", temperature=0.7)
 
 quiz_generator_template = '''
 Text:{text}
@@ -57,4 +57,5 @@ review_chain=LLMChain(llm=llm, prompt=quiz_evaluation_prompt, output_key="review
 
 # Overall chain allowing to run the two chains in sequence
 generate_evaluate_chain = SequentialChain(chains=[quiz_chain, review_chain], input_variables=["text", "number", "subject", "tone", "response_json"], output_variables=["quiz", "review"], verbose=True)
+
 
