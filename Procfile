@@ -1,5 +1,5 @@
 <!-- web: gunicorn --config gunicorn.conf.py gettingstarted.wsgi -->
-web: sh setup.sh &amp;&amp; streamlit run StreamLitApp.py
+web: sh setup.sh && streamlit run StreamLitApp.py
 
 # python3 -m venv --upgrade-deps .venv
 # source .venv/bin/activate
