@@ -12,25 +12,25 @@ from src.mcqgenerator.logger import logging
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
-from langchain_community.llms import HuggingFaceHub
+# from langchain_community.llms import HuggingFaceHub
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Access environment variables with os.getenv()
 openai_key = os.getenv("OPENAI_API_KEY")
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("HUGGINGFACE_API_KEY")
+# os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("HUGGINGFACE_API_KEY")
 
 model1= "gpt-3.5-turbo"
 model2= "gpt-4o"
-model3 = "mistralai/Mistral-7B-Instruct-v0.3"
-model4 = "meta-llama/Meta-Llama-3-8B-Instruct"
-model5 = "meta-llama/Meta-Llama-3-8B"
+# model3 = "mistralai/Mistral-7B-Instruct-v0.3"
+# model4 = "meta-llama/Meta-Llama-3-8B-Instruct"
+# model5 = "meta-llama/Meta-Llama-3-8B"
 
 llm1 = ChatOpenAI(openai_api_key=openai_key, model_name=model1, temperature=0.7)
 llm2 = ChatOpenAI(openai_api_key=openai_key, model_name=model2, temperature=0.7)
-llm3 = HuggingFaceHub(repo_id=model3, model_kwargs={'temperature':1,'max_new_tokens': 1000})
-llm4 = HuggingFaceHub(repo_id=model4, model_kwargs={'temperature':1})
+# llm3 = HuggingFaceHub(repo_id=model3, model_kwargs={'temperature':1,'max_new_tokens': 1000})
+# llm4 = HuggingFaceHub(repo_id=model4, model_kwargs={'temperature':1})
 
 quiz_generator_template = '''
 Text:{text}
